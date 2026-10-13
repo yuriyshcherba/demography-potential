@@ -264,16 +264,16 @@ h2{font-size:48px;line-height:1.08;font-weight:600;letter-spacing:-.025em;margin
 
 /* waterfall & replacement */
 .wf{margin-top:56px}
-.wr{display:grid;grid-template-columns:330px 1fr;align-items:center;height:96px;border-top:1px solid var(--line)}
+.wr{display:grid;grid-template-columns:330px 1fr;align-items:center;height:80px;border-top:1px solid var(--line)}
 .wr:last-child{border-bottom:1px solid var(--line)}
 .wr .wl{font-size:21px;line-height:1.3}
 .wr .wl small{display:block;font-size:16px;color:var(--ink2);margin-top:4px}
-.wt{position:relative;height:96px}
-.wb{position:absolute;top:28px;height:40px;border-radius:6px;left:var(--l);width:var(--w);transform:scaleX(0);transform-origin:var(--o);transition:transform 1s cubic-bezier(.65,0,.2,1) var(--d)}
+.wt{position:relative;height:80px}
+.wb{position:absolute;top:20px;height:40px;border-radius:6px;left:var(--l);width:var(--w);transform:scaleX(0);transform-origin:var(--o);transition:transform 1s cubic-bezier(.65,0,.2,1) var(--d)}
 .run .wb{transform:none}
 .wb.pos{background:var(--cz)} .wb.neg{background:var(--ink3);opacity:.6} .wb.cen{background:repeating-linear-gradient(135deg,var(--ink3) 0 6px,transparent 6px 11px);border:1.5px solid var(--ink3);box-sizing:border-box}
 .wb.tot{background:var(--cz);box-shadow:inset 0 0 0 3px var(--bg),0 0 0 2px var(--cz)}
-.wv{position:absolute;top:36px;font-size:21px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;opacity:0;transition:opacity .4s ease var(--d2)}
+.wv{position:absolute;top:28px;font-size:21px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;opacity:0;transition:opacity .4s ease var(--d2)}
 .run .wv{opacity:1}
 .wg{position:absolute;top:-8px;bottom:-8px;border-left:1.5px dashed var(--ink3);opacity:0;transition:opacity .4s ease var(--d2)}
 .run .wg{opacity:1}
@@ -876,10 +876,6 @@ h2{font-size:48px;line-height:1.08;font-weight:600;letter-spacing:-.025em;margin
 <section class="slide ind" data-ch="cmp"><div class="lc"><div class="hd"><span class="chip" data-m="chip"><i class="by"></i><i class="cz"></i>Сравнение</span><span class="sec" data-m="sec">4.1</span></div><h2 class="f">Численность населения</h2>
 <div class="kpis"><div class="k by"><span class="cn" data-m="nby"><i></i>Беларусь</span><span class="kv num" data-m="vby" data-v="96.4" data-d="1" data-s="0" data-u="ix"><b>96,4</b><small>%</small></span></div><div class="k cz"><span class="cn" data-m="ncz"><i></i>Чехия</span><span class="kv num" data-m="vcz" data-v="103.5" data-d="1" data-s="0" data-u="ix"><b>103,5</b><small>%</small></span></div><p class="kc f">численность на конец 2024 года, 2014 год = 100 %</p></div><p class="note f">Население Чехии больше на 1 800 220 человек (примерно на 20 %), поэтому сравниваются базисные темпы роста</p></div>
 <div class="rc"><figure class="fig"><div class="cw" data-m="fig-main-560"><svg data-spec="c_pop" data-slot="main" viewBox="0 0 1000 560"></svg></div><div class="drows f"></div><figcaption class="f">Рис. 9. Численность населения, % к 2014 году; ниже — изменение за год, тыс. человек</figcaption></figure></div></section>
-<section class="slide" data-ch="cmp"><div class="hd"><span class="chip" data-m="chip"><i class="by"></i><i class="cz"></i>Сравнение</span><span class="sec" data-m="sec">4.1</span></div><h2 class="f h2t">Главное различие — источники изменения численности</h2>
-<div class="wf"><div class="wr f"><div class="wl">Миграционный прирост<small>2015–2024 годы</small></div><div class="wt"><span class="wg" style="left:881px;--d2:1.20s"></span><i class="wb pos" style="--l:0px;--w:881px;--o:left;--d:0.30s"></i><span class="wv" style="left:897px;--d2:1.10s">+685 368</span></div></div><div class="wr f"><div class="wl">Естественная убыль<small>2015–2024 годы</small></div><div class="wt"><span class="wg" style="left:743px;--d2:1.95s"></span><i class="wb neg" style="--l:743px;--w:138px;--o:right;--d:1.05s"></i><span class="wv" style="left:727px;transform:translateX(-100%);--d2:1.85s">−107 202</span></div></div><div class="wr f"><div class="wl">Уточнение по переписи<small>2021 год</small></div><div class="wt"><span class="wg" style="left:477px;--d2:2.70s"></span><i class="wb cen" style="--l:477px;--w:266px;--o:right;--d:1.80s"></i><span class="wv" style="left:461px;transform:translateX(-100%);--d2:2.60s">−206 941</span></div></div><div class="wr f"><div class="wl">Итог: рост численности<small>2014 → 2024</small></div><div class="wt"><i class="wb tot" style="--l:0px;--w:477px;--o:left;--d:2.55s"></i><span class="wv" style="left:493px;--d2:3.35s">+371 225</span></div></div></div>
-<div class="wfn f"><div><b>Чехия:</b> даже за вычетом всей поправки переписи (685 368 − 206 941 = 478 427) миграционный прирост примерно в 4,5 раза больше естественной убыли</div>
-<div><b>Беларусь:</b> естественная убыль велика, а миграционный приток слишком мал, чтобы её возместить</div></div></section>
 <section class="slide ind" data-ch="cmp"><div class="lc"><div class="hd"><span class="chip" data-m="chip"><i class="by"></i><i class="cz"></i>Сравнение</span><span class="sec" data-m="sec">4.2</span></div><h2 class="f">Возрастная структура</h2>
 <div class="kpis"><div class="k by"><span class="cn" data-m="nby"><i></i>Беларусь</span><span class="kv num" data-m="vby" data-v="17.9" data-d="1" data-s="0" data-u="pct"><b>17,9</b><small>%</small></span></div><div class="k cz"><span class="cn" data-m="ncz"><i></i>Чехия</span><span class="kv num" data-m="vcz" data-v="20.7" data-d="1" data-s="0" data-u="pct"><b>20,7</b><small>%</small></span></div><p class="kc f">доля людей 65 лет и старше, 2024 год</p></div><p class="note f">Население Чехии старше (средний возраст 43,1 против 41,9 года), но в Беларуси доля пожилых растёт быстрее: на 3,7 п. п. против 2,9 п. п.</p><p class="note f">Коэффициент нагрузки за десять лет вырос почти одинаково: на 75 и на 74</p></div>
 <div class="rc"><figure class="fig"><div class="cw" data-m="fig-main-560"><svg data-spec="c_old" data-slot="main" viewBox="0 0 1000 560"></svg></div><div class="drows f"></div><figcaption class="f">Рис. 10. Доля населения 65 лет и старше, %; ниже — демографическая нагрузка</figcaption></figure></div></section>
@@ -1030,17 +1026,17 @@ function build(svg,s){
       style:`fill:var(--${cc(z.k)});opacity:${z.o};transform-box:fill-box;transform-origin:center ${v>=0?'bottom':'top'}`},gg);H.bars.push({r,i});
     if(z.bl){const t=txt(svg,{class:'bl lab',x:g.X(i),y:v>=0?y-8:y+19,'text-anchor':'middle'},FMT[z.bl](v));H.lab.push({e:t,i,bar:1})}})});
   const ends=!s.split;
-  lines(s).forEach(z=>{const c=cc(z.k),gg=el('g',{},svg),st=`stroke:var(--${c})`;const h={g:gg};
+  lines(s).forEach(z=>{const c=cc(z.k),cv=z.col||`var(--${c})`,gg=el('g',{},svg),st=`stroke:${cv}`;const h={g:gg};
     h.cx=el('path',{class:'cx',style:st+';opacity:.5'},gg);
     h.p=el('path',{class:'ln','stroke-width':z.w||4.5,style:st+';opacity:'+(z.o||1)},gg);
-    h.dot=el('circle',{r:(z.w||4.5)+2.5,style:`fill:var(--${c});opacity:${z.o||1}`},gg);
+    h.dot=el('circle',{r:(z.w||4.5)+2.5,style:`fill:${cv};opacity:${z.o||1}`},gg);
     h.lab=el('g',{},gg);
-    if(ends){txt(h.lab,{class:'lv',style:`fill:var(--${c})`},FMT[z.lf](z.vals[lastIdx(z.vals)]));if(z.n) txt(h.lab,{class:'lnm',y:22},z.n)}
+    if(ends){txt(h.lab,{class:'lv',style:`fill:${cv}`},FMT[z.lf](z.vals[lastIdx(z.vals)]));if(z.n) txt(h.lab,{class:'lnm',y:22},z.n)}
     H.ser[z.k]=h});
   H.notes=el('g',{},svg);
   const tgt=pix(s,g);
   lines(s).forEach(z=>{if(!z.pl) return;const pp=tgt[z.k].pl;z.vals.forEach((v,i)=>{if(v==null||(ends&&i===10)) return;
-    const t=txt(svg,{class:'pl lab'+(s.split?' sm':''),x:g.X(i,z.k)-(i===0?8:0),y:tgt[z.k].y[i]+pp[i],'text-anchor':i===0?'start':'middle',style:`fill:var(--${cc(z.k)});fill-opacity:${z.o?.85:1}`},FMT[z.pl](v));H.lab.push({e:t,i})})});
+    const t=txt(svg,{class:'pl lab'+(s.split?' sm':''),x:g.X(i,z.k)-(i===0?8:0),y:tgt[z.k].y[i]+pp[i],'text-anchor':i===0?'start':'middle',style:`fill:${z.col||'var(--'+cc(z.k)+')'};fill-opacity:${z.o?.85:1}`},FMT[z.pl](v));H.lab.push({e:t,i})})});
   (s.notes||[]).forEach(n=>{const z=s.series.find(q=>q.k===n.k);const x=g.X(n.i,z.k),y=g.Y(z.vals[n.i]);
     if(z.type==='line') el('circle',{class:'nr',cx:x,cy:y,r:11},H.notes);
     txt(H.notes,{class:'nt',x:x+n.dx,y:y+n.dy,'text-anchor':n.a},n.t)});
